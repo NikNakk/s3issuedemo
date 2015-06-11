@@ -4,7 +4,10 @@
 \alias{demonstrateIssue}
 \title{Demonstrates the issue with using S3 methods and Import with a package that doesn't use S3method()}
 \usage{
-demonstrateIssue()
+demonstrateIssue(loadLibrary = FALSE)
+}
+\arguments{
+\item{loadLibrary}{determines whether to use library() to attach the rhdf5 package to the global environment}
 }
 \description{
 Demonstrates the issue with using S3 methods and Import with a package that doesn't use S3method()
@@ -12,6 +15,7 @@ Demonstrates the issue with using S3 methods and Import with a package that does
 \examples{
 \dontrun{
 demonstrateIssue()
+demonstrateIssue(loadLibrary = TRUE)
 }
 }
 
